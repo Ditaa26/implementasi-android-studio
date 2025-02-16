@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="151dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="84dp"
+        android:contentDescription="@string/logo_content_description"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/appNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textColor="#A52A2A"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        app:layout_constraintTop_toBottomOf="@id/logoImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#FF6F91"
+        android:text="@string/button_text_masuk"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appNameTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

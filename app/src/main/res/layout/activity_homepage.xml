@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+<ImageView
+        android:id="@+id/headerImage"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/donat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="123dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="@string/logo_description"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/sweet_message"
+        android:textColor="#8B0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/headerImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearMenu"
+        android:layout_width="236dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center"
+        android:background="#F7A1B3"
+        android:backgroundTint="#F7A1B3"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.454">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/coklat_content_description"
+            android:src="@drawable/donat3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_donat"
+            android:textColor="#980003"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/favoriteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/favorite_this_month"
+        android:textColor="#8B0000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.559" />
+
+    <LinearLayout
+        android:id="@+id/donatMachaLayout"
+        android:layout_width="184dp"
+        android:layout_height="135dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="20dp"
+        android:background="#F7A1B3"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintEnd_toStartOf="@id/donatStrawberryLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/favoriteText">
+
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="47dp"
+            android:contentDescription="@string/macha_content_description"
+            android:src="@drawable/macha" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/donat_macha"
+            android:textAlignment="center"
+            android:textColor="#980003"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/harga_macha"
+            android:textAlignment="center"
+            android:textColor="#980003"
+            android:fontFamily="sans-serif"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/donatStrawberryLayout"
+        android:layout_width="179dp"
+        android:layout_height="135dp"
+        android:layout_margin="4dp"
+        android:background="#F7A1B3"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/donatMachaLayout"
+        app:layout_constraintTop_toBottomOf="@id/favoriteText">
+
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="47dp"
+            android:contentDescription="@string/strawberry_content_description"
+            android:src="@drawable/strawberry" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/donat_strawberry"
+            android:textAlignment="center"
+            android:textColor="#980003"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/harga_strawberry"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:textColor="#980003"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="305dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="4dp"
+        android:background="#FF7D91"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+        <ImageView
+            android:id="@+id/home_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/home_content_description"
+            android:src="@drawable/rumah" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/profile_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/profile_content_description"
+            android:src="@drawable/account_circle" />
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
